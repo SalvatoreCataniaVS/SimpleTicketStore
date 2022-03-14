@@ -12,7 +12,7 @@ contract("TicketStore", function (accounts) {
   const nTicket = 10
   const singer = "Marco Mengoni"
   const id = 0
-  const amount = 5
+  const amount = 2
 
   let ticketStore
   const owner = accounts[0]

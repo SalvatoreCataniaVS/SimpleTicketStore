@@ -23,7 +23,7 @@ contract TicketStore is ERC1155, ERC1155Holder, Ownable  {
     mapping(uint => Event) private _idToEvent;
     mapping(address => uint) private _pendingWithdrawals;
 
-    event eventCreated(uint indexed id, uint price, uint ticketSupply, string indexed singer);
+    event eventCreated(uint indexed id, uint price, uint ticketSupply, string singer);
     event ticketBuyed(uint indexed id, address _buyer, uint _amount);
 
     function createEvent(uint _price, uint _ticketSupply, string memory _singer) onlyOwner public {
